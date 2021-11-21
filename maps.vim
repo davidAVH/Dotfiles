@@ -46,8 +46,6 @@ nmap <Leader>q :q <CR>
 nmap <Leader>e :wq <CR>
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
-nmap <Leader>p :Prettier<CR>
-
 " These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
 " Without these mappings, `n` & `N` works fine. (These mappings just provide
 " different highlight method and have some other features )
@@ -67,6 +65,8 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 nmap <leader>cf  <Plug>(coc-fix-current)
 nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format)
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
