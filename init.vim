@@ -31,6 +31,7 @@ set cmdheight=1
 set laststatus=2
 set scrolloff=10
 set expandtab
+set nospell 
 "let loaded_matchparen = 1
 "set shell=fish
 set backupskip=/tmp/*,/private/tmp/*
@@ -156,6 +157,9 @@ endif
 set exrc
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
+" Override highlight setting.
+highlight SpelunkerSpellBad cterm=underline ctermfg=247 gui=underline guifg=#9e9e9e
+highlight SpelunkerComplexOrCompoundWord cterm=underline ctermfg=NONE gui=underline guifg=NONE
 "}}}
 
 " vim: set foldmethod=marker foldlevel=0:

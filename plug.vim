@@ -41,6 +41,8 @@ if has("nvim")
   Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
   Plug 'ayu-theme/ayu-vim'
   Plug 'joshdick/onedark.vim'
+  Plug 'terryma/vim-multiple-cursors'
+  Plug 'kamykn/spelunker.vim'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
