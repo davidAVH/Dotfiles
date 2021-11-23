@@ -1,3 +1,8 @@
+if exists('g:vscode')
+  runtime ./vscode/settings.vim
+  runtime ./vscode/maps.vim
+else 
+
 " Fundamentals "{{{
 " ---------------------------------------------------------------------
 
@@ -131,6 +136,9 @@ if has("unix")
 endif
 
 runtime ./maps.vim
+runtime ./spell.vim
+
+
 "}}}
 
 " Syntax theme "{{{
@@ -188,7 +196,6 @@ endif
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-
 "}}}
-
 " vim: set foldmethod=marker foldlevel=0:
+endif

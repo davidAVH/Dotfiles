@@ -33,10 +33,9 @@ vnoremap <silent> # :<C-U>
 
 "-----------------------------
 " Tabs
-
 " Open current directory
 nmap te :tabedit 
-nmap tn :tabnew .<CR>
+nmap tn :tabnew<CR>
 nmap <Leader>j :tabprev<CR>
 nmap <Leader>l :tabnext<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
