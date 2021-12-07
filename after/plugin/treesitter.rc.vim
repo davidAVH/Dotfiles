@@ -13,14 +13,6 @@ require'nvim-treesitter.configs'.setup {
     enable = false,
     disable = {},
   },
-  autotag = {
-    enable = true,
-  },
-  rainbow = {
-    enable = true,
-    extended_mode = true, 
-    max_file_lines = nil,
-  },
   ensure_installed = {
     "tsx",
     "toml",

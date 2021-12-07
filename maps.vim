@@ -1,6 +1,5 @@
 " Description: Keymaps
-let mapleader=' '
-let NERDTreeQuitOnOpen=1
+
 nnoremap <S-C-p> "0p
 " Delete without yank
 nnoremap <leader>d "_d
@@ -36,22 +35,10 @@ vnoremap <silent> # :<C-U>
 
 " Open current directory
 nmap te :tabedit 
-nmap tn :tabnew .<Return>
 nmap <S-Tab> :tabprev<Return>
 nmap <Tab> :tabnext<Return>
-nmap <Leader>nt :NERDTreeFind<CR>
-nmap <Leader>s <Plug>(easymotion-s2)
-map  / <Plug>(easymotion-sn)
-omap / <Plug>(easymotion-tn)
-nmap <Leader>p :Prettier<CR>
 
-" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
-" Without these mappings, `n` & `N` works fine. (These mappings just provide
-" different highlight method and have some other features )
-map  n <Plug>(easymotion-next)
-map  N <Plug>(easymotion-prev)
 "------------------------------
-
 " Windows
 
 " Split window

@@ -26,27 +26,9 @@ if has("nvim")
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'windwp/nvim-autopairs'
-  Plug 'morhetz/gruvbox'
-  Plug 'sheerun/vim-polyglot'
-  Plug 'easymotion/vim-easymotion'
-  Plug 'scrooloose/nerdtree'
-  Plug 'alvan/vim-closetag'
-  Plug 'windwp/nvim-ts-autotag'
-  Plug 'kabouzeid/nvim-lspinstall'
-  Plug 'RRethy/vim-illuminate'
-  Plug 'p00f/nvim-ts-rainbow'
-  Plug 'lukas-reineke/indent-blankline.nvim'
-  Plug 'tpope/vim-commentary'
-  Plug 'tpope/vim-surround'
-  Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-  Plug 'ayu-theme/ayu-vim'
-  Plug 'joshdick/onedark.vim'
-  Plug 'terryma/vim-multiple-cursors'
-  Plug 'kamykn/spelunker.vim'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
-Plug 'rafamadriz/friendly-snippets'
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
 
 call plug#end()

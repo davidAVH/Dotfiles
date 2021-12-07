@@ -10,12 +10,7 @@ if !1 | finish | endif
 
 set nocompatible
 set number
-set relativenumber
 syntax enable
-set nobackup       
-set nowritebackup  
-set noswapfile
-set mouse=a
 set fileencodings=utf-8,sjis,euc-jp,latin
 set encoding=utf-8
 set title
@@ -23,17 +18,13 @@ set autoindent
 set background=dark
 set nobackup
 set hlsearch
-set nobackup       
-set nowritebackup  
-set noswapfile  
 set showcmd
 set cmdheight=1
 set laststatus=2
 set scrolloff=10
 set expandtab
-set nospell 
 "let loaded_matchparen = 1
-"set shell=fish
+set shell=fish
 set backupskip=/tmp/*,/private/tmp/*
 
 " incremental substitution (neovim)
@@ -56,10 +47,11 @@ set ignorecase
 set smarttab
 " indents
 filetype plugin indent on
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set ai "Auto indent
 set si "Smart indent
+set nowrap "No Wrap lines
 set backspace=start,eol,indent
 " Finding files - Search down into subfolders
 set path+=**
@@ -145,21 +137,15 @@ if exists("&termguicolors") && exists("&winblend")
   set background=dark
   " Use NeoSolarized
   let g:neosolarized_termtrans=1
-  let ayucolor="dark"
   runtime ./colors/NeoSolarized.vim
-  colorscheme onedark
-  hi Normal guibg=NONE ctermbg=NONE
+  colorscheme NeoSolarized
 endif
+
 "}}}
 
 " Extras "{{{
 " ---------------------------------------------------------------------
 set exrc
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
-let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
-" Override highlight setting.
-highlight SpelunkerSpellBad cterm=underline ctermfg=247 gui=underline guifg=#9e9e9e
-highlight SpelunkerComplexOrCompoundWord cterm=underline ctermfg=NONE gui=underline guifg=NONE
 "}}}
 
 " vim: set foldmethod=marker foldlevel=0:
