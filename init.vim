@@ -143,12 +143,23 @@ if exists("&termguicolors") && exists("&winblend")
   set wildoptions=pum
   set pumblend=5
   set background=dark
-  " Use NeoSolarized
-  let g:neosolarized_termtrans=1
-  let ayucolor="dark"
+  let g:gruvbox_transparent_bg=1
+  let g:tokyonight_style = "night"
+  let g:tokyonight_italic_functions = 1
+  let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
+  let g:tokyonight_colors = {
+   \ 'hint': 'orange',
+   \ 'error': '#ff0000'
+\ }
+
   runtime ./colors/NeoSolarized.vim
-  colorscheme onedark
-  hi Normal guibg=NONE ctermbg=NONE
+  " Use NeoSolarized
+  " let g:neosolarized_termtrans=1
+  " colorscheme NeoSolarized
+ colorscheme gruvbox
+ hi Normal guibg=NONE ctermbg=NONE
+
+
 endif
 "}}}
 

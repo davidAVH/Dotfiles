@@ -5,30 +5,21 @@ endif
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
+  ensure_installed = "maintained",
+  context_commentstring = {
+    enable = true
+  },
   highlight = {
     enable = true,
     disable = {},
   },
   indent = {
-    enable = false,
+    enable = true,
     disable = {},
-  },
-  autotag = {
-    enable = true,
-  },
-  rainbow = {
-    enable = true,
-    extended_mode = true, 
-    max_file_lines = nil,
   },
   ensure_installed = {
     "tsx",
-    "toml",
-    "fish",
-    "php",
     "json",
-    "yaml",
-    "swift",
     "html",
     "scss"
   },
