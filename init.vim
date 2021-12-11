@@ -37,6 +37,7 @@ set laststatus=2
 set scrolloff=10
 set expandtab
 set nospell 
+set showtabline=2
 set updatetime=300
 "let loaded_matchparen = 1
 "set shell=fish
@@ -166,7 +167,7 @@ if exists("&termguicolors") && exists("&winblend")
     \ 'error': '#ff0000'
   \ }
   " Load the colorscheme
-  colorscheme tokyonight
+  colorscheme nord
    hi Normal guibg=NONE ctermbg=NONE
 endif
 "}}}
@@ -175,8 +176,8 @@ endif
 " ---------------------------------------------------------------------
 set exrc
 " Override highlight setting.
-highlight SpelunkerSpellBad cterm=underline ctermfg=247 gui=underline guifg=#9e9e9e
-highlight SpelunkerComplexOrCompoundWord cterm=underline ctermfg=NONE gui=underline guifg=NONE
+" highlight SpelunkerSpellBad cterm=underline ctermfg=247 gui=underline guifg=#9e9e9e
+" highlight SpelunkerComplexOrCompoundWord cterm=underline ctermfg=NONE gui=underline guifg=NONE
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
