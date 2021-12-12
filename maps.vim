@@ -32,6 +32,7 @@ vnoremap <silent> # :<C-U>
 
 "-----------------------------
 " Tabs
+let g:completion_trigger_character = ['.']
 
 " Open current directory
 nmap te :tabedit 

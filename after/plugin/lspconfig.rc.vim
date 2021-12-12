@@ -9,6 +9,8 @@ EOF
 lua << EOF
 local nvim_lsp = require('lspconfig')
 local protocol = require'vim.lsp.protocol'
+local configs = require'lspconfig/configs'    
+
 
 -- Use an on_attach function to only map the following keys 
 -- after the language server attaches to the current buffer
@@ -88,6 +90,21 @@ end
 local capabilities = require('cmp_nvim_lsp').update_capabilities(
   vim.lsp.protocol.make_client_capabilities()
 )
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+if not nvim_lsp.emmet_ls then    
+  configs.emmet_ls = {    
+    default_config = {    
+      cmd = {'emmet-ls', '--stdio'};
+      filetypes = {'html', 'css', 'blade'};
+      root_dir = function(fname)    
+        return vim.loop.cwd()
+      end;    
+      settings = {};    
+    };    
+  }    
+end  
+nvim_lsp.emmet_ls.setup{ capabilities = capabilities; }
 
 nvim_lsp.flow.setup {
   on_attach = on_attach,
