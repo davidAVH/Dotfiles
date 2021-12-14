@@ -59,6 +59,13 @@ xnoremap <C-w><C-c> <Cmd>call VSCodeNotify('workbench.action.closeActiveEditor')
 nnoremap <space>w <Cmd>call VSCodeNotify('workbench.action.files.save')<CR>
 xnoremap <space>w <Cmd>call VSCodeNotify('workbench.action.files.save')<CR>
 
+nnoremap <space>j <Cmd>call VSCodeNotify('workbench.action.previousEditor')<CR>
+xnoremap <space>j <Cmd>call VSCodeNotify('workbench.action.previousEditor')<CR>
+nnoremap <space>l <Cmd>call VSCodeNotify('workbench.action.nextEditor')<CR>
+xnoremap <space>l <Cmd>call VSCodeNotify('workbench.action.nextEditor')<CR>
+
+
+
 
 " window/splits management 
 nnoremap ss <Cmd>call <SID>split('h')<CR>
